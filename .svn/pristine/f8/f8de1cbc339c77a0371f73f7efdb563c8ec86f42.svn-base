@@ -1,0 +1,531 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/views/login",
+			"style": {
+				"navigationBarTitleText": "登录页",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/views/home/home",
+			"style": {
+				"navigationBarTitleText": "TAS",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec3d",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px",
+							"redDot": false // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/OA/home","style": {"navigationBarTitleText": "OA","enablePullDownRefresh": false}},
+		{"path": "pages/views/home/info","style": {"navigationBarTitleText": "TAS待处理事项","enablePullDownRefresh": false}},
+		{"path": "pages/views/home/user","style": {"navigationBarTitleText": "个人信息","enablePullDownRefresh": false}},
+		{"path": "pages/views/client/dayin","style": {"navigationBarTitleText": "打印","enablePullDownRefresh": false}},
+		{"path": "pages/views/home/push_list","style": {"navigationBarTitleText": "消息推送列表","enablePullDownRefresh": true}},
+		{"path": "pages/views/home/push_detail","style": {"navigationBarTitleText": "消息推送详情","enablePullDownRefresh": false}},
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+
+				}
+			}
+		},
+		{"path": "pages/views/common/upload","style": {"navigationBarTitleText": "附件上传","enablePullDownRefresh": false}},
+		{
+			"path": "pages/views/common/user",
+			"style": {
+				"navigationBarTitleText": "人员选择",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ueca9",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/contract/msg/my-preview",
+			"style": {
+				"navigationBarTitleText": "预览",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec22",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/contract/msg/list",
+			"style": {
+				"navigationBarTitleText": "合同信息列表",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/views/contract/msg/detail","style": {"navigationBarTitleText": "合同详情","enablePullDownRefresh": false}},
+		{"path": "pages/views/contract/msg/modular/task_list","style": {"navigationBarTitleText": "报告任务(采样任务)","enablePullDownRefresh": false}},
+		{"path": "pages/views/contract/msg/modular/node_list","style": {"navigationBarTitleText": "节点展示","enablePullDownRefresh": false}},
+		{
+			"path": "pages/views/contract/msg/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/views/client/home/list","style": {"navigationBarTitleText": "销售统计","enablePullDownRefresh": true}},
+		{
+			"path": "pages/views/client/info/list",
+			"style": {
+				"navigationBarTitleText": "客户信息",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/views/client/info/details","style": {"navigationBarTitleText": "客户详情","enablePullDownRefresh": false}},
+		{"path": "pages/views/client/info/detail","style": {"navigationBarTitleText": "客户详情","enablePullDownRefresh": false}},
+		{
+			"path": "pages/views/client/info/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/info/user",
+			"style": {
+				"navigationBarTitleText": "联系人列表",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/contactManage/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/views/client/contactManage/list","style": {"navigationBarTitleText": "客联系人","enablePullDownRefresh": true}},
+		{
+			"path": "pages/views/client/trackRecord/list",
+			"style": {
+				"navigationBarTitleText": "跟进记录",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/trackRecord/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/visitorsToPlan/list",
+			"style": {
+				"navigationBarTitleText": "访客计划",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/visitorsToPlan/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/visitorsToPlan/delay",
+			"style": {
+				"navigationBarTitleText": "延期计划",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/salesLeads/list",
+			"style": {
+				"navigationBarTitleText": "销售机会",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/salesLeads/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/quotationRecord/list",
+			"style": {
+				"navigationBarTitleText": "报价记录",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/quotationRecord/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/report/list",
+			"style": {
+				"navigationBarTitleText": "工作报告",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/report/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/report/assign_list",
+			"style": {
+				"navigationBarTitleText": "工作指派",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/report/assign_edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/sellTarget/list",
+			"style": {
+				"navigationBarTitleText": "销售目标",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/views/client/sellTarget/edit",
+			"style": {
+				"navigationBarTitleText": "添加/修改",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/views/sampling/reportTask/list","style": {"navigationBarTitleText": "样品交接列表","enablePullDownRefresh": true}},
+		{"path": "pages/views/sampling/reportTask/sample_list","style": {"navigationBarTitleText": "样品管理列表","enablePullDownRefresh": true}},
+		{"path": "pages/views/verity/changeCont/list","style": {"navigationBarTitleText": "变更合同审核列表","enablePullDownRefresh": true}},
+		{"path": "pages/views/verity/changeCont/verity","style": {"navigationBarTitleText": "变更合同审核","enablePullDownRefresh": false}},
+		{"path": "pages/views/verity/reportVerity/list","style": {"navigationBarTitleText": "报告审核列表","enablePullDownRefresh": true}},
+		{
+			"path": "pages/views/verity/reportVerity/verity",
+			"style": {
+				"navigationBarTitleText": "报告审核",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/views/verity/contractVerity/list","style": {"navigationBarTitleText": "合同审核列表","enablePullDownRefresh": true}},
+		{"path": "pages/views/verity/contractVerity/verity","style": {"navigationBarTitleText": "合同审核","enablePullDownRefresh": false}},
+		{"path": "pages/views/verity/contractVerity/process","style": {"navigationBarTitleText": "流程明细","enablePullDownRefresh": false}},
+		
+		/* -------------------------------------------------------------- OA --------------------------------------------------------------------------------- */
+		{
+			"path": "pages/OA/work/myApplication/list",
+			"style": {
+				"navigationBarTitleText": "发起申请列表",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ued24",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+							// "redDot" : true  // 红点小图标
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/OA/work/myApplication/application","style": {"navigationBarTitleText": "发起申请","enablePullDownRefresh": false}},
+		{
+			"path": "pages/OA/work/myApplication/edits/borrowMoeny",
+			"style": {
+				"navigationBarTitleText": "借款申请",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\uec0a",
+							"fontSrc": "/static/icon/iconfont.ttf",
+							"fontSize": "22px"
+						}]
+					}
+				}
+			}
+		},
+		{"path": "pages/OA/work/myApprove/list","style": {"navigationBarTitleText": "待我审批列表","enablePullDownRefresh": true}},
+		{"path": "pages/OA/work/addressList/list","style": {"navigationBarTitleText": "通讯录列表","enablePullDownRefresh": true}}
+		
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#4D72E4",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/views/home/home",
+			"text": "TAS"
+		}, {
+			"pagePath": "pages/OA/home",
+			"text": "OA"
+		}, {
+			"pagePath": "pages/views/home/info",
+			"text": "待办"
+		}, {
+			"pagePath": "pages/views/home/user",
+			"text": "我的"
+		}]
+	}
+}

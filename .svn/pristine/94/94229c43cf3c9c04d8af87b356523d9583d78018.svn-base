@@ -1,0 +1,126 @@
+.my-content{
+	padding-top: 20rpx
+}
+.my-edit{
+	background-color: #FFFFFF;padding: 0 20rpx;
+}
+.my-padding-lr {
+	padding: 0 20rpx;
+}
+
+.my-margin-lr {
+	margin: 0 20rpx;
+}
+
+.common-title{
+	font-weight: 700;
+	font-size: 30rpx;
+	padding-left: 16rpx;
+	padding-top: 30rpx;
+	padding-bottom: 10rpx;
+}
+.my-form-item{
+	border: 1px solid #C0C4CC;
+	border-radius: 20rpx;
+	padding: 4rpx 10rpx !important;
+}
+
+/* 首页按钮样式 */
+.listOneButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16rpx 0;
+	background-color: #ffffff;
+	margin: 20rpx 20rpx 0 20rpx;
+	border-radius: 60rpx;
+	color: #4D72E4;
+	border:1px solid #92A9EF
+}
+.listOneButton .iconfont{
+	margin-right: 6rpx;
+	font-size: 36rpx;
+}
+.listOneButton .text{
+	margin-right: 6rpx;
+	font-size: 28rpx;
+}
+
+/* 搜索样式 */
+.my-search-popup{
+	height: 98%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.my-search-popup-title{
+	width: 100%;
+	height: 100rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 34rpx;
+	font-weight: 400;
+}
+.my-search-popup-content{
+	height: calc(100% - 200rpx);
+	display: flex;
+	flex-direction: column;
+}
+.my-search-popup-content .modular{
+	margin-bottom: 40rpx;
+	touch-action: none
+}
+.my-search-popup-content .modular_input{
+	display: flex;
+	padding: 0 30rpx;
+	align-items: center;
+	margin-bottom: 40rpx;
+	touch-action: none
+}
+.my-search-popup-content .modular_date{
+	margin-bottom: 40rpx;
+	touch-action: none
+}
+.my-search-popup-content .modular_input .intBorder{
+	border-bottom: 1px solid #E6E6E6;
+	padding: 20rpx 0;
+}
+.my-search-popup-content .title{
+	font-weight: 700;
+	padding: 0 30rpx;
+	margin-bottom: 20rpx;
+}
+.my-search-popup-content .menu{
+	height: 90rpx;
+	background-color: #F6F8F7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24rpx;
+	margin-bottom: 20rpx;
+	border-radius: 10rpx;
+}
+.my-search-popup-content .activeMenu{
+	background-color: #EFF5FE;
+	border: 1px solid #D1E2FC;
+	color: #4D72E4;
+}
+.my-search-popup-button{
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+/* 禁选样式 */
+.disabledClass{
+	background-color: #F5F7FA;
+	padding: 14rpx 0 14rpx 10rpx !important;
+	border-radius: 10rpx;
+}
+/* 人员多选框禁选 */
+.userDisabled{
+	background-color: #F5F7FA;padding-left: 10rpx !important;border-radius: 10rpx;
+}
+
