@@ -34,6 +34,9 @@ import reportVerityApi from '../pages/api/verity/reportVerity.js'
 import addressListApi from '../pages/api/OA/work/addressList.js'
 import myApplicationApi from '../pages/api/OA/work/myApplication.js'
 import myApproveApi from '../pages/api/OA/work/myApprove.js'
+/* 财务管理 */
+import purchaseApi from '../pages/api/OA/finance/purchase.js'
+
 /* 首页 */
 import OAhomeApi from '../pages/api/OA/home.js'
 
@@ -74,6 +77,7 @@ const install = (Vue, vm) => {
 		addressListApi,
 		myApplicationApi,
 		myApproveApi,
+		purchaseApi,
 		OAhomeApi
 	};
 }

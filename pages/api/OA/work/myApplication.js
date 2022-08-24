@@ -19,4 +19,16 @@ export default {
 			})
 		})
 	},
+	
+	
+	//借款申请-edit
+	getFinanceLoanAdd(params, that) {
+		return new Promise((resolve, reject) => {
+			that.$u.post(that.$common.BaseUrl_OA + that.$common.OA_Server + '/FinanceLoan/add', params).then(res => {
+				resolve(res)
+			}).catch(err => {
+				reject(err)
+			})
+		})
+	}
 }

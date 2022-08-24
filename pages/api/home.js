@@ -58,5 +58,15 @@ export default {
 				reject(err)
 			})
 		})
+	},
+	// 获取指定用户对应银行卡信息
+	getAssetsMaintenanceGetDataByUserId(params, that) {
+		return new Promise((resolve, reject) => {
+			that.$u.post(that.$common.BaseUrl_OA + that.$common.OA_Server + '/AssetsMaintenance/getDataByUserId', params).then(res => {
+				resolve(res)
+			}).catch(err => {
+				reject(err)
+			})
+		})
 	}
 }
